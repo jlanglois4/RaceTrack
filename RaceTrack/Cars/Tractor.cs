@@ -24,5 +24,10 @@ namespace RaceTrack.RaceTrack.Cars
             Console.WriteLine($"The {Name} is having a hard time stopping!");
             base.Brake();
         }
+        
+        public override void StopEngine()
+        {
+            Console.WriteLine($"The {Name} \"accidentally\" runs over Antonio's car before coming to a stop.");
+        }
     }
 }
